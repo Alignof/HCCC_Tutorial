@@ -12,11 +12,11 @@ int main(void) {
 
 これに対応する簡単なアセンブリは以下です．
 ```asm
-.intel_syntax noprefix #1
-.globl main #2
+.intel_syntax noprefix ; #1
+.globl main ; #2
 
-main: #3
-    #4: prologue
+main: ; #3
+    ; #4: prologue
     push rbp
     mov rbp, rsp
 
