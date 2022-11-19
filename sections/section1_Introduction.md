@@ -13,6 +13,7 @@
 - [section2: アセンブリの基礎](/sections/section2_BasicOfAssembly.md)
 - [section3: exitcodeを返す](/sections/section3_ReturnExitCode.md)
 - [section4: 四則演算](/sections/section4_BasicArithmeticOperations.md)
+- [section5: ローカル変数](/sections/section5_LocalVariable.md)
 
 # 次のセクション
 [section2: アセンブリの基礎](/sections/section2_BasicOfAssembly.md)
