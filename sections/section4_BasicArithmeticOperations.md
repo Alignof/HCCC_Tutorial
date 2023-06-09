@@ -4,5 +4,7 @@
 
 注意すべきはレジスタのサイズや符号の有無でしょうか．
 
+// todo: 詳しく書く
+
 # 次のセクション
 [section5: ローカル変数](/sections/section5_LocalVariable.md)
