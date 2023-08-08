@@ -32,6 +32,15 @@ which object code (which ends up in a .o file after assembly) is not pure machin
 
 第一引数をつかさどる `edi` レジスタに入れたので，たとえばこのあとに `call 関数名` することで，文字列リテラルを第一引数に入れた関数呼び出しが可能になります．
 
+これを [section5: ローカル変数](/sections/section5_LocalVariable.md) と組み合わせると，たとえば関数内の `const char *p = "foo";` は次のようにして実現できることがわかります．
+
+```
+.LC0:
+    .string "foo"
+
+mov QWORD PTR [rbp-8], OFFSET FLAT:.LC0
+```
+
 ## ローカルな char 配列
 
 # 次のセクション
