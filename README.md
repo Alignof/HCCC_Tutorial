@@ -8,9 +8,8 @@
 - [section3: exitcodeを返す](/sections/section3_ReturnExitCode.md)
 - [section4: 四則演算](/sections/section4_BasicArithmeticOperations.md)
 - [section5: ローカル変数](/sections/section5_LocalVariable.md)
-<!-- 
 - [section6: 関数呼び出し](/sections/section6_CallFunction.md)
 - [section7: 文字列](/sections/section7_String.md)
 - [section8: ループ](/sections/section8_Loop.md)
 - [section9: 条件分岐](/sections/section9_Condition.md)
---> 
+
