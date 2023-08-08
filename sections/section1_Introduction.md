@@ -5,7 +5,7 @@
 
 <!-- [^1]: 当初の予定だと2週間前に出る予定だったらしいですよ（現在金曜19時）． -->
 
-[^1]: 現在セキュキャン2023全国大会二日目の夜。必死でTipsを改善していっています
+[^1]: 現在セキュキャン2023全国大会二日目の夜．必死でTipsを改善していっています
 
 # チュートリアルの目次
 このチュートリアルは以下のセクションに分かれています．  
@@ -16,6 +16,10 @@
 - [section3: exitcodeを返す](/sections/section3_ReturnExitCode.md)
 - [section4: 四則演算](/sections/section4_BasicArithmeticOperations.md)
 - [section5: ローカル変数](/sections/section5_LocalVariable.md)
+- [section6: 関数呼び出し](/sections/section6_CallFunction.md)
+- [section7: 文字列](/sections/section7_String.md)
+- [section8: ループ](/sections/section8_Loop.md)
+- [section9: 条件分岐](/sections/section9_Condition.md)
 
 # 次のセクション
 [section2: アセンブリの基礎](/sections/section2_BasicOfAssembly.md)
