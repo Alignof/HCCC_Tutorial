@@ -6,7 +6,7 @@
 - [section1: はじめに](/sections/section1_Introduction.md)
 - [section2: アセンブリの基礎](/sections/section2_BasicOfAssembly.md)
 - [section3: exitcodeを返す](/sections/section3_ReturnExitCode.md)
-- [section4: 四則演算・レジスタのサイズと符号](/sections/section4_BasicArithmeticOperations.md)
+- [section4: 四則演算・レジスタのサイズ](/sections/section4_BasicArithmeticOperations.md)
 - [section5: ローカル変数](/sections/section5_LocalVariable.md)
 - [section6: 関数呼び出し](/sections/section6_CallFunction.md)
 - [section7: 文字列](/sections/section7_String.md)
