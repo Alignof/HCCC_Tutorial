@@ -10,7 +10,7 @@
 # チュートリアルの目次
 このチュートリアルは以下のセクションに分かれています．  
 順に読んでいけば問題が解けるようになっているはずです．  
-またCの構文や，やりたいこととと対応しているので競技中に知りたいところだけを拾い読みするのも良いでしょう．  
+またCの構文や，やりたいことと対応しているので競技中に知りたいところだけを拾い読みするのも良いでしょう．  
 - [section1: はじめに](/sections/section1_Introduction.md)
 - [section2: アセンブリの基礎](/sections/section2_BasicOfAssembly.md)
 - [section3: exitcodeを返す](/sections/section3_ReturnExitCode.md)
