@@ -1,5 +1,7 @@
 # 文字列
 
+## グローバルな文字列リテラル
+
 ```
 .LC0:
         .string "foo bar\n"
@@ -27,6 +29,10 @@ the OFFSET FLAT: reference is to make a note in the object file and it is the lo
 will finally fill in the right value in the generated instruction. This is one of the respects in
 which object code (which ends up in a .o file after assembly) is not pure machine code.
 -->
+
+第一引数をつかさどる `edi` レジスタに入れたので，たとえばこのあとに `call 関数名` することで，文字列リテラルを第一引数に入れた関数呼び出しが可能になります．
+
+## ローカルな char 配列
 
 # 次のセクション
 [section8: ループ](/sections/section8_Loop.md)
