@@ -17,7 +17,7 @@
 - [section4: 四則演算・レジスタのサイズと符号](/sections/section4_BasicArithmeticOperations.md)
 - [section5: ローカル変数](/sections/section5_LocalVariable.md)
 - [section6: 関数呼び出し](/sections/section6_CallFunction.md)
-- [section7: 文字列](/sections/section7_String.md)
+- [section7: 文字列・グローバル変数](/sections/section7_String.md)
 - [section8: 条件分岐・ループ](/sections/section8_Loop.md)
 
 # 次のセクション

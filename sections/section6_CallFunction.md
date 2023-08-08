@@ -53,4 +53,4 @@ call fun
 お手数ですが，『8 × 奇数』になっていない場合は，関数を呼び出す前に `sub rsp, 8` をし，呼び出した直後に `add rsp, 8` をしておいてください．
 
 # 次のセクション
-[section7: 文字列](/sections/section7_String.md)
+[section7: 文字列・グローバル変数](/sections/section7_String.md)

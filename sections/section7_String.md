@@ -1,4 +1,4 @@
-# 文字列
+# 文字列・グローバル変数
 
 ## グローバルな文字列リテラル
 
@@ -41,7 +41,47 @@ which object code (which ends up in a .o file after assembly) is not pure machin
 mov QWORD PTR [rbp-8], OFFSET FLAT:.LC0
 ```
 
+
 ## ローカルな char 配列
+
+一方で，**関数内**での `char array[] = "foo";` は，次のようにして実現できます．
+
+```
+mov BYTE PTR [rbp-20], 0x66
+mov BYTE PTR [rbp-19], 0x6F
+mov BYTE PTR [rbp-18], 0x6F
+mov BYTE PTR [rbp-17], 0x00
+```
+
+これは，'f', 'o', 'o', NUL の 4 文字を，`rbp-20` から始まる長さ 4 の領域に格納しています．
+
+実は，次のように書くこともできます．
+
+```
+mov DWORD PTR [rbp-20], 0x6F6F66
+```
+
+## グローバルな変数
+
+グローバル変数としての
+
+```
+int a = 3;
+int *p = &a;
+int **q = &p - 2;
+```
+
+は，次のように書くことができます．
+
+```
+a:
+        .long   3
+p:
+        .quad   a
+q:
+        .quad   p-16
+```
+
 
 # 次のセクション
 [section8: ループ](/sections/section8_Loop.md)
