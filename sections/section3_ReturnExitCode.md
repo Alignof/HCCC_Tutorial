@@ -30,5 +30,5 @@ exitcodeを使ってアセンブリから値を返してみましょう．
 - raxを使ってexitcodeを返すことができる．
 
 # 次のセクション
-[section4: 四則演算](/sections/section4_BasicArithmeticOperations.md)
+[section4: 四則演算・レジスタのサイズと符号](/sections/section4_BasicArithmeticOperations.md)
 
