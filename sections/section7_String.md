@@ -10,12 +10,14 @@
 と先頭に書くと，たとえば
 
 ```
-mov edi, OFFSET FLAT:.LC0
+mov rdi, .LC0[rip]
 ```
 
-と書くことによって，文字列 `"foo bar\n"` （の先頭アドレス）が `edi` レジスタに入ります．
+と書くことによって，文字列 `"foo bar\n"` （の先頭アドレス）が `rdi` レジスタに入ります．
 
+<!-- 
 今扱っているのは 64 ビット CPU であるにもかかわらず，諸事情によりここでは 32 ビットのレジスタを使ってアドレスを格納することになっています．
+--> 
 
 <!-- 
 「諸事情」が書いてある PDF: https://inst.eecs.berkeley.edu/~cs164/fa12/ia32-refs/ia32-chapter-four.pdf
@@ -30,7 +32,7 @@ will finally fill in the right value in the generated instruction. This is one o
 which object code (which ends up in a .o file after assembly) is not pure machine code.
 -->
 
-第一引数をつかさどる `edi` レジスタに入れたので，たとえばこのあとに `call 関数名` することで，文字列リテラルを第一引数に入れた関数呼び出しが可能になります．
+第一引数をつかさどる `rdi` レジスタに入れたので，たとえばこのあとに `call 関数名` することで，文字列リテラルを第一引数に入れた関数呼び出しが可能になります．
 
 これを [section5: ローカル変数](/sections/section5_LocalVariable.md) と組み合わせると，たとえば関数内の `const char *p = "foo";` は次のようにして実現できることがわかります．
 
@@ -38,7 +40,8 @@ which object code (which ends up in a .o file after assembly) is not pure machin
 .LC0:
     .string "foo"
 
-mov QWORD PTR [rbp-8], OFFSET FLAT:.LC0
+mov rax, .LC0[rip]
+mov QWORD PTR [rbp-8], rax
 ```
 
 
@@ -81,7 +84,8 @@ p:
 q:
         .quad   p-16
 
-mov DWORD PTR [rbp-8], OFFSET FLAT:a
+mov rax, a[rip]
+mov QWORD PTR [rbp-8], rax
 ```
 
 `.long`，`.quad`は確保するサイズを，後ろの値は初期値を表しています．
