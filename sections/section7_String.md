@@ -85,7 +85,7 @@ q:
         .quad   p-16
 
 mov rax, a[rip]
-mov QWORD PTR [rbp-8], rax
+mov DWORD PTR [rbp-8], rax
 ```
 
 `.long`，`.quad`は確保するサイズを，後ろの値は初期値を表しています．
