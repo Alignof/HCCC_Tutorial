@@ -82,5 +82,11 @@ lea rax, [4*rdi + 3]
 
 と書くことができます．便利ですね．
 
+## まとめ
+- ローカル変数は*スタック領域*に確保する．  
+- スタック領域は*スタックポインタを減らして*確保する．  
+- ローカル変数への書き込みは`mov DWORD PTR [rbp - 12], eax`．
+- ローカル変数の値の読み出しは`mov eax, DWORD PTR [rbp - 12]`．
+
 # 次のセクション
 [section6: 関数呼び出し](/sections/section6_CallFunction.md)
