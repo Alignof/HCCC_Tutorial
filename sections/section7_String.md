@@ -72,6 +72,7 @@ mov DWORD PTR [rbp-20], 0x6F6F66
 int a = 3;
 int *p = &a;
 int **q = &p - 2;
+char z = 10;
 ```
 
 は，次のように書くことができます．
@@ -83,20 +84,27 @@ p:
         .quad   a
 q:
         .quad   p-16
-
-mov rax, a[rip]
-mov DWORD PTR [rbp-8], rax
+z:
+        .byte 10
 ```
 
 `.long`，`.quad`は確保するサイズを，後ろの値は初期値を表しています．
 ラベルはアセンブリ内の「位置」を示していたので，pの初期値はグローバル変数`a`の
 アドレスになります．
 
+これらを関数内からアクセスするときには，変数名が `a` なら `a[rip]` といった場所から読み出す，というやり方をします．よって，変数 `a` と変数 `z` をそれぞれ eax レジスタに読み込むには
+
+```
+mov eax, DWORD PTR a[rip]
+movsx eax, BYTE PTR z[rip]
+```
+
+とすればよいです．
+
 ## まとめ
 - グローバルな文字リテラルは`.string`
 - ローカルなchar配列はスタックに要素ごとに格納する．
 - グローバルな変数は`a: .long 3`や`p: .quad a`
-
 
 # 次のセクション
 [section8: ループ](/sections/section8_Loop.md)
