@@ -25,5 +25,5 @@ main:
 `main:` と書くことで `main` という名前のラベルを作り，そしてそれを外部から参照するために `.globl main` をつけていたのでしたね．
 
 
-# おめでとう！
-[これでアセンブリはばっちり！さあ君も人間Cコンパイラだ！](https://hccc-in-seccamp.vercel.app/)
+# 次のセクション
+[section9: 条件分岐](/sections/section9_Branching.md)
