@@ -30,5 +30,7 @@ mainラベルを置くことでcallを使ってmain関数（の書かれてい�
 さて，ラベルを使ってアセンブリ内の所望の位置に飛ぶことができるということは前方に飛ぶことで無限ループを実現できます．
 
 
-# おめでとう！
-[これでアセンブリはばっちり！さあ君も人間Cコンパイラだ！](https://hccc-in-seccamp.vercel.app/)
+
+# 次のセクション
+[section9: 条件分岐](/sections/section9_Branching.md)
+
