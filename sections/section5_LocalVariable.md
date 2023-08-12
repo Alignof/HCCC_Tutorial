@@ -22,6 +22,7 @@ main: ; #3
     mov rax, 0
 
     ; #5: epilogue
+    mov rsp, rbp
     pop rbp
     ret
 ```
