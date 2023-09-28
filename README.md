@@ -4,7 +4,7 @@
 
 # 競技サイト
 競技は以下のサイトで行っています．  
-[https://hccc-in-seccamp.vercel.app/](https://hccc-in-seccamp.vercel.app/)
+[https://hccc.contest.seccon.jp/](https://hccc.contest.seccon.jp/)
 
 # 目次
 - [section1: はじめに](/sections/section1_Introduction.md)
